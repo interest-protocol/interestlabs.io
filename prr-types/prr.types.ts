@@ -21,3 +21,4 @@ export interface Prrrrr {
 }
 
 export type line = string;
+export type j = number;

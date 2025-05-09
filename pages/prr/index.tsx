@@ -3,7 +3,7 @@ import { FC } from 'react';
 
 import { Footer } from '@/components';
 import Headerr from '@/components/header';
-import { line } from '@/prr-types/prr.types';
+import { j, line } from '@/prr-types/prr.types';
 
 import { PRR, PRRR, PRRRR, PRRRRR } from '../../prr-types/prr.data';
 
@@ -34,7 +34,7 @@ const PRRSection: FC = () => (
             >
               {section.title}
             </Typography>
-            {section.body.map((line: line, j) => (
+            {section.body.map((line: line, j: j) => (
               <Typography
                 key={`prr-body-${j}`}
                 mb="s"
@@ -51,7 +51,7 @@ const PRRSection: FC = () => (
               </Typography>
             ))}
             <br />
-            {section.fbody.map((line, j) => (
+            {section.fbody.map((line: line, j: j) => (
               <Typography
                 key={`prr-body-${j}`}
                 mb="0"
@@ -68,7 +68,7 @@ const PRRSection: FC = () => (
           </div>
         ))}
 
-        {PRRR.map((section, i) => (
+        {PRRR.map((section, i: j) => (
           <div key={`prrr-${i}`}>
             <Typography
               mb="m"
@@ -80,7 +80,7 @@ const PRRSection: FC = () => (
             >
               {section.title}
             </Typography>
-            {section.body.map((line: line, j) => (
+            {section.body.map((line: line, j: j) => (
               <Typography
                 key={`prrr-body-${j}`}
                 mb="s"
@@ -97,7 +97,7 @@ const PRRSection: FC = () => (
           </div>
         ))}
 
-        {PRRRR.map((section, i) => (
+        {PRRRR.map((section, i: j) => (
           <div key={`prrrr-${i}`}>
             <Typography
               mb="m"
@@ -109,7 +109,7 @@ const PRRSection: FC = () => (
             >
               {section.title}
             </Typography>
-            {section.body.map((line: line, j) => (
+            {section.body.map((line: line, j: j) => (
               <Typography
                 key={`prrrr-body-${j}`}
                 mb="s"
@@ -126,7 +126,7 @@ const PRRSection: FC = () => (
           </div>
         ))}
 
-        {PRRRRR.map((section, i) => (
+        {PRRRRR.map((section, i: j) => (
           <div key={`prrrrr-${i}`}>
             <Typography
               mb="m"
@@ -139,7 +139,7 @@ const PRRSection: FC = () => (
               {section.title}
             </Typography>
 
-            {section.body.map((item, j) => (
+            {section.body.map((item: line, j: j) => (
               <Typography
                 key={`prrrrr-body-${j}`}
                 mb="0"
@@ -154,7 +154,7 @@ const PRRSection: FC = () => (
               </Typography>
             ))}
             <br />
-            {section.fbody.map((line: line, k) => (
+            {section.fbody.map((line: line, k: j) => (
               <Typography
                 key={`prrrrr-fbody-${k}`}
                 mt="0"
