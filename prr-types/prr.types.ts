@@ -19,3 +19,5 @@ export interface Prrrrr {
   fbody: string[];
   body: string[];
 }
+
+export type line = string;

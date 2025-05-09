@@ -3,6 +3,7 @@ import { FC } from 'react';
 
 import { Footer } from '@/components';
 import Headerr from '@/components/header';
+import { line } from '@/prr-types/prr.types';
 
 import { PRR, PRRR, PRRRR, PRRRRR } from '../../prr-types/prr.data';
 
@@ -79,7 +80,7 @@ const PRRSection: FC = () => (
             >
               {section.title}
             </Typography>
-            {section.body.map((line, j) => (
+            {section.body.map((line: line, j) => (
               <Typography
                 key={`prrr-body-${j}`}
                 mb="s"
@@ -108,7 +109,7 @@ const PRRSection: FC = () => (
             >
               {section.title}
             </Typography>
-            {section.body.map((line, j) => (
+            {section.body.map((line: line, j) => (
               <Typography
                 key={`prrrr-body-${j}`}
                 mb="s"
@@ -153,7 +154,7 @@ const PRRSection: FC = () => (
               </Typography>
             ))}
             <br />
-            {section.fbody.map((line, k) => (
+            {section.fbody.map((line: line, k) => (
               <Typography
                 key={`prrrrr-fbody-${k}`}
                 mt="0"
