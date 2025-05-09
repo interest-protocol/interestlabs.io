@@ -1,4 +1,4 @@
-import { Prr, Prrr, Prrrr, Prrrrr } from './prr.types';
+import { Prr, Prrr, Prrrr, Prrrrr } from '../pages/prr/prr.types';
 
 export const PRR: ReadonlyArray<Prr> = [
   {

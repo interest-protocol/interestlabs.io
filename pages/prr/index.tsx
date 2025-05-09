@@ -4,7 +4,7 @@ import { FC } from 'react';
 import { Footer } from '@/components';
 import Headerr from '@/components/header';
 
-import { PRR, PRRR, PRRRR, PRRRRR } from './prr.data';
+import { PRR, PRRR, PRRRR, PRRRRR } from '../../prr-types/prr.data';
 
 const PRRSection: FC = () => (
   <>
@@ -21,7 +21,6 @@ const PRRSection: FC = () => (
         paddingTop="60px"
         maxWidth="1320px"
       >
-        {/* PRR: Prr[] */}
         {PRR.map((section, i) => (
           <div key={`prr-${i}`}>
             <Typography
@@ -68,7 +67,6 @@ const PRRSection: FC = () => (
           </div>
         ))}
 
-        {/* PRRR: Prrr[] */}
         {PRRR.map((section, i) => (
           <div key={`prrr-${i}`}>
             <Typography
@@ -98,7 +96,6 @@ const PRRSection: FC = () => (
           </div>
         ))}
 
-        {/* PRRRR: Prrrr[] */}
         {PRRRR.map((section, i) => (
           <div key={`prrrr-${i}`}>
             <Typography
@@ -128,7 +125,6 @@ const PRRSection: FC = () => (
           </div>
         ))}
 
-        {/* PRRRRR: Prrrrr[] */}
         {PRRRRR.map((section, i) => (
           <div key={`prrrrr-${i}`}>
             <Typography
