@@ -34,7 +34,7 @@ const PRRSection: FC = () => (
             >
               {section.title}
             </Typography>
-            {section.body.map((line, j) => (
+            {section.body.map((line: line, j) => (
               <Typography
                 key={`prr-body-${j}`}
                 mb="s"
