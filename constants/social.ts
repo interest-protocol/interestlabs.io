@@ -1,10 +1,16 @@
 import { DiscordSVG, GithubSVG, TelegramSVG, XSVG } from '@/components/svg';
+import Prrr from '@/components/svg/prr';
 
 export const SOCIAL = [
   {
     title: 'Discord',
     Icon: DiscordSVG,
     link: 'https://discord.com/invite/interestprotocol',
+  },
+  {
+    title: 'Prr',
+    Icon: Prrr,
+    link: '/prr',
   },
   {
     title: 'X',
