@@ -3,9 +3,8 @@ import { FC } from 'react';
 
 import { Footer } from '@/components';
 import Headerr from '@/components/header';
+import { PRR, PRRR, PRRRR, PRRRRR } from '@/prr-types/prr.data';
 import { j, line } from '@/prr-types/prr.types';
-
-import { PRR, PRRR, PRRRR, PRRRRR } from '../../prr-types/prr.data';
 
 const PRRSection: FC = () => (
   <>
