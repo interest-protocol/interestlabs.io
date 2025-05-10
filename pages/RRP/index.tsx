@@ -2,13 +2,17 @@ import { Box, Typography } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
 
 import { Footer } from '@/components';
-import Headerr from '@/components/header';
-import { PRR, PRRR, PRRRR, PRRRRR } from '@/prr-types/prr.data';
-import { j, line } from '@/prr-types/prr.types';
-
+import Header from '@/components/header';
+import {
+  heading,
+  lastsummry,
+  projectdescription,
+  projectsummary,
+} from '@/rrp-types/rrp.data';
+import { index, text } from '@/rrp-types/rrp.types';
 const PRRSection: FC = () => (
   <>
-    <Headerr />
+    <Header />
     <Box px="xl">
       <Box
         paddingLeft="30px"
@@ -21,8 +25,8 @@ const PRRSection: FC = () => (
         paddingTop="60px"
         maxWidth="1320px"
       >
-        {PRR.map((section, i) => (
-          <div key={`prr-${i}`}>
+        {heading.map((section, index) => (
+          <div key={`prr-${index}`}>
             <Typography
               mb="s"
               size="large"
@@ -33,9 +37,9 @@ const PRRSection: FC = () => (
             >
               {section.title}
             </Typography>
-            {section.body.map((line: line, j: j) => (
+            {section.body.map((text: text, index: index) => (
               <Typography
-                key={`prr-body-${j}`}
+                key={`prr-body-${index}`}
                 mb="s"
                 mt="0"
                 lineHeight="180%"
@@ -46,13 +50,13 @@ const PRRSection: FC = () => (
                 letterSpacing="0%"
                 maxWidth="900px"
               >
-                {line}
+                {text}
               </Typography>
             ))}
             <br />
-            {section.fbody.map((line: line, j: j) => (
+            {section.metadata.map((text: text, index: index) => (
               <Typography
-                key={`prr-body-${j}`}
+                key={`prr-body-${index}`}
                 mb="0"
                 lineHeight="180%"
                 variant="body"
@@ -61,14 +65,14 @@ const PRRSection: FC = () => (
                 fontWeight="500"
                 letterSpacing="0%"
               >
-                {line}
+                {text}
               </Typography>
             ))}
           </div>
         ))}
 
-        {PRRR.map((section, i: j) => (
-          <div key={`prrr-${i}`}>
+        {projectsummary.map((section, index: index) => (
+          <div key={`prrr-${index}`}>
             <Typography
               mb="m"
               size="small"
@@ -79,9 +83,9 @@ const PRRSection: FC = () => (
             >
               {section.title}
             </Typography>
-            {section.body.map((line: line, j: j) => (
+            {section.body.map((text: text, index: index) => (
               <Typography
-                key={`prrr-body-${j}`}
+                key={`prrr-body-${index}`}
                 mb="s"
                 lineHeight="180%"
                 variant="body"
@@ -90,14 +94,14 @@ const PRRSection: FC = () => (
                 fontWeight="500"
                 maxWidth="900px"
               >
-                {line}
+                {text}
               </Typography>
             ))}
           </div>
         ))}
 
-        {PRRRR.map((section, i: j) => (
-          <div key={`prrrr-${i}`}>
+        {projectdescription.map((section, index: index) => (
+          <div key={`prrrr-${index}`}>
             <Typography
               mb="m"
               size="large"
@@ -108,9 +112,9 @@ const PRRSection: FC = () => (
             >
               {section.title}
             </Typography>
-            {section.body.map((line: line, j: j) => (
+            {section.body.map((text: text, index: index) => (
               <Typography
-                key={`prrrr-body-${j}`}
+                key={`prrrr-body-${index}`}
                 mb="s"
                 lineHeight="180%"
                 variant="body"
@@ -119,14 +123,14 @@ const PRRSection: FC = () => (
                 fontWeight="500"
                 maxWidth="900px"
               >
-                {line}
+                {text}
               </Typography>
             ))}
           </div>
         ))}
 
-        {PRRRRR.map((section, i: j) => (
-          <div key={`prrrrr-${i}`}>
+        {lastsummry.map((section, index: index) => (
+          <div key={`prrrrr-${index}`}>
             <Typography
               mb="m"
               size="large"
@@ -138,9 +142,9 @@ const PRRSection: FC = () => (
               {section.title}
             </Typography>
 
-            {section.body.map((item: line, j: j) => (
+            {section.body.map((item: text, index: index) => (
               <Typography
-                key={`prrrrr-body-${j}`}
+                key={`prrrrr-body-${index}`}
                 mb="0"
                 lineHeight="180%"
                 variant="body"
@@ -153,7 +157,7 @@ const PRRSection: FC = () => (
               </Typography>
             ))}
             <br />
-            {section.fbody.map((line: line, k: j) => (
+            {section.metadata.map((text: text, k: index) => (
               <Typography
                 key={`prrrrr-fbody-${k}`}
                 mt="0"
@@ -165,7 +169,7 @@ const PRRSection: FC = () => (
                 fontWeight="500"
                 maxWidth="900px"
               >
-                {line}
+                {text}
               </Typography>
             ))}
           </div>

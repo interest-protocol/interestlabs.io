@@ -4,7 +4,7 @@ import { FC } from 'react';
 import Social from '../social';
 import { LogoSVG } from '../svg';
 
-const Headerr: FC = () => {
+const Header: FC = () => {
   return (
     <Box position="relative">
       <Box
@@ -13,14 +13,15 @@ const Headerr: FC = () => {
         display="grid"
         height="30vh"
         position="relative"
-        gridTemplateRows="7rem auto 7rem"
+        gridTemplateRows="repeat(3, 1fr)"
         gridTemplateColumns="7rem auto 7rem"
+        marginRight="60px"
       >
-        <LogoSVG maxHeight="2.5rem" maxWidth="2.5rem" width="100%" />
+        <LogoSVG maxHeight="3.5rem" maxWidth="3.5rem" width="100%" />
         <Box />
         <Social dark />
         <Box
-          gap="8xl"
+          gap="4xl"
           display="flex"
           gridColumn="1/-1"
           alignItems="center"
@@ -46,4 +47,4 @@ const Headerr: FC = () => {
   );
 };
 
-export default Headerr;
+export default Header;

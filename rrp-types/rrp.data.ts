@@ -1,6 +1,11 @@
-import { Prr, Prrr, Prrrr, Prrrrr } from './prr.types';
+import {
+  Heading,
+  LastSummry,
+  ProjectDescription,
+  ProjectSummary,
+} from './rrp.types';
 
-export const PRR: ReadonlyArray<Prr> = [
+export const heading: ReadonlyArray<Heading> = [
   {
     title: 'Plano de Recuperação e Resiliência (PRR) ',
     body: [
@@ -8,7 +13,7 @@ export const PRR: ReadonlyArray<Prr> = [
       'A empresa DEFI LDA foi beneficiária de apoio no âmbito do Plano de Recuperação e Resiliência (PRR), através do projeto "Projeto Nº 2574", enquadrado no Aviso Nº 10/C16-i02/2022, que visa impulsionar a transição digital das empresas em Portugal.',
       'Este projeto insere-se na componente C16-i02 do PRR, dedicada à Transição Digital das Empresas, tendo como objetivo principal a modernização tecnológica, a digitalização de processos e o reforço da competitividade empresarial.',
     ],
-    fbody: [
+    metadata: [
       'Montante de apoio atribuído: 30.000€',
       'Data de início: 01/03/2023',
       'Data de conclusão: 01/06/2024',
@@ -16,7 +21,7 @@ export const PRR: ReadonlyArray<Prr> = [
   },
 ];
 
-export const PRRR: ReadonlyArray<Prrr> = [
+export const projectsummary: ReadonlyArray<ProjectSummary> = [
   {
     title: 'Síntese do Projeto ',
     body: [
@@ -27,7 +32,7 @@ export const PRRR: ReadonlyArray<Prrr> = [
   },
 ];
 
-export const PRRRR: ReadonlyArray<Prrrr> = [
+export const projectdescription: ReadonlyArray<ProjectDescription> = [
   {
     title: 'Descrição e Objetivos do Projeto ',
     body: [
@@ -46,11 +51,11 @@ export const PRRRR: ReadonlyArray<Prrrr> = [
   },
 ];
 
-export const PRRRRR: ReadonlyArray<Prrrrr> = [
+export const lastsummry: ReadonlyArray<LastSummry> = [
   {
     title: 'Síntese do Projeto ',
     body: ['Sustentabilidade', 'Transição Digital', 'Inovação Financeira'],
-    fbody: [
+    metadata: [
       `Este investimento é cofinanciado pela União Europeia, através do fundo NextGenerationEU,
        contribuindo para uma economia mais digital, resiliente e sustentável.`,
       'Mais informações sobre o PRR em: https://recuperarportugal.gov.pt',
