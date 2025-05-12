@@ -33,6 +33,7 @@ const Hero: FC = () => {
         position="relative"
         gridTemplateRows="7rem auto 7rem"
         gridTemplateColumns="7rem auto 7rem"
+        marginRight="60px"
       >
         <LogoSVG maxHeight="2.5rem" maxWidth="2.5rem" width="100%" />
         <Box />

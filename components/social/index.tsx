@@ -5,9 +5,8 @@ import unikey from 'unikey';
 import { SOCIAL } from '@/constants/social';
 
 import { SocialProps } from './social.types';
-
 const Social: FC<SocialProps> = ({ dark }) => (
-  <Box display="grid" gridTemplateColumns="1fr 1fr" gap="m">
+  <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap="m">
     {SOCIAL.map(({ Icon, link, title }) => (
       <a
         href={link}
