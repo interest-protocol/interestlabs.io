@@ -1,4 +1,5 @@
 import { DiscordSVG, GithubSVG, TelegramSVG, XSVG } from '@/components/svg';
+import RRPPageIcon from '@/components/svg/RRP';
 
 export const SOCIAL = [
   {
@@ -6,10 +7,16 @@ export const SOCIAL = [
     Icon: DiscordSVG,
     link: 'https://discord.com/invite/interestprotocol',
   },
+
   {
     title: 'X',
     Icon: XSVG,
     link: 'https://x.com/IPXLabs',
+  },
+  {
+    title: 'Recovery and Resilience Plan',
+    Icon: RRPPageIcon,
+    link: '/RRP',
   },
   {
     title: 'Github',
