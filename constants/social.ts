@@ -1,6 +1,8 @@
 import { DiscordSVG, GithubSVG, TelegramSVG, XSVG } from '@/components/svg';
 import RRPPageIcon from '@/components/svg/RRP';
 
+import { Routes, RoutesEnum } from './routes';
+
 export const SOCIAL = [
   {
     title: 'Discord',
@@ -16,7 +18,7 @@ export const SOCIAL = [
   {
     title: 'Recovery and Resilience Plan',
     Icon: RRPPageIcon,
-    link: '/RRP',
+    link: Routes[RoutesEnum.Prr],
   },
   {
     title: 'Github',

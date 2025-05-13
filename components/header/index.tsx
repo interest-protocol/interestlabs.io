@@ -1,47 +1,40 @@
 import { Box } from '@interest-protocol/ui-kit';
-import { FC } from 'react';
+import { FC, PropsWithChildren } from 'react';
 
+import { StarBackground } from '..';
 import Social from '../social';
+import { StarBackgroundProps } from '../star-background/star-background.types';
 import { LogoSVG } from '../svg';
 
-const Header: FC = () => {
+const Header: FC<PropsWithChildren<StarBackgroundProps>> = ({
+  isPRR,
+  children,
+  withoutBall,
+  numberOfParticles,
+}) => {
   return (
     <Box position="relative">
+      <StarBackground
+        withoutBall={withoutBall}
+        numberOfParticles={numberOfParticles}
+      />
       <Box
         p="xl"
         zIndex="1"
         display="grid"
-        height="30vh"
         position="relative"
-        gridTemplateRows="repeat(3, 1fr)"
-        gridTemplateColumns="7rem auto 7rem"
-        marginRight="60px"
+        height={isPRR ? 'unset' : '100vh'}
+        gridTemplateColumns="7rem auto 12rem"
+        gridTemplateRows={isPRR ? 'unset' : '7rem auto 7rem'}
       >
-        <LogoSVG maxHeight="3.5rem" maxWidth="3.5rem" width="100%" />
+        <a href="/">
+          <LogoSVG maxHeight="2.5rem" maxWidth="2.5rem" width="100%" />
+        </a>
         <Box />
-        <Social dark />
-        <Box
-          gap="4xl"
-          display="flex"
-          gridColumn="1/-1"
-          alignItems="center"
-          flexDirection="column"
-          justifyContent="center"
-        >
-          <Box
-            gap="m"
-            display="flex"
-            textAlign="center"
-            alignItems="center"
-            flexDirection="column"
-          ></Box>
+        <Box>
+          <Social dark />
         </Box>
-        <Box
-          display="flex"
-          gridColumn="1/-1"
-          alignItems="flex-end"
-          justifyContent="center"
-        ></Box>
+        {children}
       </Box>
     </Box>
   );
