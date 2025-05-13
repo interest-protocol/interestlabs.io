@@ -1,4 +1,4 @@
-import { PartnersImage } from '../partners/partners.types';
+import { PartnersImage } from '@/views/home/partners/partners.types';
 
 export const FOOTER_IMAGES: ReadonlyArray<PartnersImage> = [
   {
