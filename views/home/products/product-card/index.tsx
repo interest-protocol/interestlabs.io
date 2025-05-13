@@ -8,8 +8,13 @@ import {
 import { FC } from 'react';
 import unikey from 'unikey';
 
-import { MovementSVG, SuiSVG, TicketSVG } from '../../svg';
-import AnchorArrow from '../../svg/anchor-arrow';
+import {
+  AnchorArrowSVG,
+  MovementSVG,
+  SuiSVG,
+  TicketSVG,
+} from '@/components/svg';
+
 import { ProductCardProps } from './product-card.types';
 
 const cardVariants = {
@@ -154,7 +159,11 @@ const ProductCard: FC<ProductCardProps> = ({
             nHover={{ color: 'onSurface' }}
             width={['unset', 'unset', 'unset', 'auto']}
             SuffixIcon={
-              <AnchorArrow maxWidth="0.8rem" maxHeight="0.8rem" width="100%" />
+              <AnchorArrowSVG
+                maxWidth="0.8rem"
+                maxHeight="0.8rem"
+                width="100%"
+              />
             }
           >
             Go to {name}

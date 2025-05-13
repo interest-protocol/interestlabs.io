@@ -12,7 +12,8 @@ import {
   SuiCoinsSVG,
   SuiTearsSVG,
   SwapSVG,
-} from '../svg';
+} from '@/components/svg';
+
 import { ProductCardProps } from './product-card/product-card.types';
 
 export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
