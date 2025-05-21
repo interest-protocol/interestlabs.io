@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { SVGProps } from '../../svg/svg.types';
+import { SVGProps } from '@/components/svg/svg.types';
 
 interface Tag {
   title: string;
