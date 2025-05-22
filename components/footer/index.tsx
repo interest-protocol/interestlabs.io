@@ -1,10 +1,16 @@
-import { Box, Button, Motion, Typography } from '@interest-protocol/ui-kit';
+import {
+  Box,
+  Button,
+  Motion,
+  TooltipWrapper,
+  Typography,
+} from '@interest-protocol/ui-kit';
 import Link from 'next/link';
 import { FC } from 'react';
 import unikey from 'unikey';
 
 import Social from '../social';
-import { AnchorArrowSVG } from '../svg';
+import { AnchorArrowSVG, CertificateSVG } from '../svg';
 import Shadow from './shadow';
 
 const Footer: FC = () => (
@@ -41,19 +47,60 @@ const Footer: FC = () => (
           <Typography variant="body" size="medium">
             Web3 open-source software built by leading Move Language engineers.
           </Typography>
-          <Box width={['100%', '28rem', '28rem', '23rem']} gap="1rem" pt="1rem">
-            <Box width="auto" key={unikey()} cursor="pointer" overflow="hidden">
-              <Link href="https://recuperarportugal.gov.pt/" target="blank">
-                <img
-                  src="/img/stamp.webp"
-                  alt="Portugal Stamp"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                  }}
-                />
-              </Link>
+          <Box display="flex" alignItems="center">
+            <Box
+              width={['100%', '28rem', '28rem', '23rem']}
+              gap="1rem"
+              pt="1rem"
+            >
+              <Box
+                width="auto"
+                key={unikey()}
+                cursor="pointer"
+                overflow="hidden"
+              >
+                <Link href="https://recuperarportugal.gov.pt/" target="blank">
+                  <img
+                    src="/img/stamp.webp"
+                    alt="Portugal Stamp"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                    }}
+                  />
+                </Link>
+              </Box>
             </Box>
+            <a
+              href="https://www.interestlabs.io/prr.jpeg"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <TooltipWrapper
+                arrowPosition="left"
+                tooltipContent="IPX Certified"
+                tooltipPosition="left"
+                color="#000"
+                bg="onSurface"
+                width="max-content"
+              >
+                <Box
+                  color="white"
+                  display="flex"
+                  height="3rem"
+                  width="3rem"
+                  alignItems="center"
+                  transition="all 300ms ease-in-out"
+                  nHover={{ color: 'goldenrod' }}
+                >
+                  <CertificateSVG
+                    maxWidth="100%"
+                    maxHeight="100%"
+                    width="100%"
+                  />
+                </Box>
+              </TooltipWrapper>
+            </a>
           </Box>
         </Box>
 
