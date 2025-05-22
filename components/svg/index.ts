@@ -2,6 +2,7 @@ export { default as AirdropSVG } from './airdrop';
 export { default as AnchorArrowSVG } from './anchor-arrow';
 export { default as ArrowDownSVG } from './arrow-down';
 export { default as BookSVG } from './book';
+export { default as CertificateSVG } from './certificate';
 export { default as CogSVG } from './cog';
 export { default as CoinSVG } from './coin';
 export { default as DAOSVG } from './dao';
