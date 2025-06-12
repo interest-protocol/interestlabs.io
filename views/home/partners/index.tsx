@@ -37,18 +37,24 @@ const Partners: FC = () => (
         border="1px solid"
         alignItems="center"
         justifyContent="center"
+        gap="1rem"
         py={['m', 'm', 'm', '2xl']}
-        px={['m', 'm', 'm', '5rem']}
+        px={['m', 'm', 'm', '1rem']}
         borderColor="outlineVariant"
+        transition="all 300ms ease-in-out"
         nHover={{ borderColor: 'outline', boxShadow: '0 0 0.5rem #fff4' }}
       >
         {PARTNERS_IMAGES.map((item) => (
           <Box
-            m="1rem"
+            my="1rem"
             width="auto"
             key={unikey()}
             cursor="pointer"
             overflow="hidden"
+            transition="all 300ms ease-in-out"
+            nHover={{
+              transform: 'scale(1.25)',
+            }}
           >
             <Link href={item.url} target="blank">
               <img
