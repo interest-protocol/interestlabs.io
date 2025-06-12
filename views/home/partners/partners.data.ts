@@ -2,39 +2,38 @@ import { PartnersImage } from './partners.types';
 
 export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
   {
-    image: '/img/suiF.png',
+    image: '/img/white/Sui-white.png',
     label: 'Sui Foundation',
     url: 'https://sui.io/',
   },
   {
-    image: '/img/movement-labs.webp',
+    image: '/img/white/movement-white.png',
     label: 'Movement Labs',
     url: 'https://movementlabs.xyz/',
   },
   {
-    image: '/img/suiplay.png',
+    image: '/img/white/SuiPay-white.png',
     label: 'SuiPlay',
     url: 'https://www.suiplay0x1.com/',
   },
   {
-    image:
-      'https://app.canopyhub.xyz/static/media/logomark.aeb126e7f9c06ac4fd94c30bf3acf10e.svg',
+    image: '/img/white/Canapy-white.png',
     label: 'Canopy',
     url: 'https://app.canopyhub.xyz/',
   },
   {
-    image: '/img/recrd-v2.png',
+    image: '/img/white/RECRD-white.png',
     label: 'Nemo Prootol',
     url: 'https://recrd.com',
   },
   {
-    image: '/img/nexa.png',
+    image: '/img/white/nexa-white.png',
     label: 'Nexa',
     url: 'https://www.insidex.trade/',
   },
   {
-    image: '/img/mosaic.png',
+    image: '/img/white/Mosaic-white.png',
     label: 'Mosaic',
-    url: 'https://www.mosaic.io/',
+    url: 'https://app.mosaic.ag/',
   },
 ];
