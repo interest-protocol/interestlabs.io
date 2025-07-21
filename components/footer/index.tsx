@@ -5,9 +5,10 @@ import {
   TooltipWrapper,
   Typography,
 } from '@interest-protocol/ui-kit';
-import Link from 'next/link';
 import { FC } from 'react';
 import unikey from 'unikey';
+
+import { Routes, RoutesEnum } from '@/constants/routes';
 
 import Social from '../social';
 import { AnchorArrowSVG, CertificateSVG } from '../svg';
@@ -59,7 +60,12 @@ const Footer: FC = () => (
                 cursor="pointer"
                 overflow="hidden"
               >
-                <Link href="https://recuperarportugal.gov.pt/" target="blank">
+                <a
+                  href={Routes[RoutesEnum.Prr]}
+                  key={unikey()}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="/img/stamp.webp"
                     alt="Portugal Stamp"
@@ -68,7 +74,7 @@ const Footer: FC = () => (
                       height: '100%',
                     }}
                   />
-                </Link>
+                </a>
               </Box>
             </Box>
             <a
