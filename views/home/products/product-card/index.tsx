@@ -102,9 +102,9 @@ const ProductCard: FC<ProductCardProps> = ({
           transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
           minHeight={['12rem', '15rem', '23rem']}
           backgroundImage={`url('${image}.webp')`}
-          backgroundPosition="0% 50%"
+          backgroundPosition="center center"
           backgroundRepeat="no-repeat"
-          backgroundSize="100%"
+          backgroundSize="cover"
         />
         <Box
           gap="xl"
@@ -139,6 +139,7 @@ const ProductCard: FC<ProductCardProps> = ({
                 py="xs"
                 key={unikey()}
                 variant="outline"
+                whiteSpace="nowrap"
                 PrefixIcon={
                   <Icon maxWidth="1rem" maxHeight="1rem" width="100%" />
                 }
