@@ -7,40 +7,21 @@ import {
   DifferenceSVG,
   IPXMovementSVG,
   PlusSVG,
+  PrivateDropSVG,
+  PythSVG,
+  ResistanceSVG,
   RocketSVG,
   SnowSVG,
   SuiCoinsSVG,
   SuiTearsSVG,
   SwapSVG,
+  VirtualDropSVG,
+  WaveSVG,
 } from '@/components/svg';
 
 import { ProductCardProps } from './product-card/product-card.types';
 
 export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
-  {
-    id: 'suicoins',
-    Icon: SuiCoinsSVG,
-    name: 'Suicoins',
-    description:
-      'Effortless coin minting and distribution; swapping and liquidity management.',
-    link: 'https://suicoins.com',
-    image: '/img/sui-coins',
-    network: 'SUI',
-    tags: [
-      {
-        title: 'DEX',
-        Icon: SwapSVG,
-      },
-      {
-        title: 'Airdrop',
-        Icon: AirdropSVG,
-      },
-      {
-        title: 'Create Coins',
-        Icon: PlusSVG,
-      },
-    ],
-  },
   {
     id: 'movement',
     Icon: IPXMovementSVG,
@@ -62,6 +43,82 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
       {
         title: 'Create Coins',
         Icon: PlusSVG,
+      },
+    ],
+  },
+  {
+    id: 'walrus',
+    Icon: SnowSVG,
+    name: 'Winter Walrus',
+    description:
+      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
+    link: 'https://www.winterwalrus.com/',
+    image: '/img/winter-walrus',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'LST',
+        Icon: PlusSVG,
+      },
+      {
+        title: 'Stake',
+        Icon: RocketSVG,
+      },
+      {
+        title: 'Walrus',
+        Icon: DifferenceSVG,
+      },
+    ],
+  },
+  {
+    id: 'tide',
+    Icon: WaveSVG,
+    name: 'Tide Private AMM',
+    description:
+      'Private liquidity AMM designed to provide the best swap rates for users.',
+    link: 'https://suiscan.xyz/mainnet/directory/Tide',
+    image: '/img/tide',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'MEV Resistance  ',
+        Icon: ResistanceSVG,
+      },
+      {
+        title: 'Pyth Oracle',
+        Icon: PythSVG,
+      },
+      {
+        title: 'Private Liquidity',
+        Icon: PrivateDropSVG,
+      },
+      {
+        title: 'Virtual Liquidity',
+        Icon: VirtualDropSVG,
+      },
+    ],
+  },
+  {
+    id: 'memez',
+    Icon: '/img/memez-head',
+    name: 'Memez.GG',
+    description:
+      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
+    link: 'https://coins.memez.gg/',
+    image: '/img/coins-memez',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Create Coin',
+        Icon: PlusSVG,
+      },
+      {
+        title: 'Launchpad',
+        Icon: RocketSVG,
+      },
+      {
+        title: 'Swap',
+        Icon: DifferenceSVG,
       },
     ],
   },
@@ -93,50 +150,26 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     ],
   },
   {
-    id: 'memez',
-    Icon: '/img/memez-head',
-    name: 'Memez.GG',
+    id: 'suicoins',
+    Icon: SuiCoinsSVG,
+    name: 'Suicoins',
     description:
-      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
-    link: 'https://coins.memez.gg/',
-    image: '/img/coins-memez',
+      'Effortless coin minting and distribution; swapping and liquidity management.',
+    link: 'https://suicoins.com',
+    image: '/img/sui-coins',
     network: 'SUI',
     tags: [
       {
-        title: 'Create Coin',
+        title: 'DEX',
+        Icon: SwapSVG,
+      },
+      {
+        title: 'Airdrop',
+        Icon: AirdropSVG,
+      },
+      {
+        title: 'Create Coins',
         Icon: PlusSVG,
-      },
-      {
-        title: 'Launchpad',
-        Icon: RocketSVG,
-      },
-      {
-        title: 'Swap',
-        Icon: DifferenceSVG,
-      },
-    ],
-  },
-  {
-    id: 'walrus',
-    Icon: SnowSVG,
-    name: 'Winter Walrus',
-    description:
-      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
-    link: 'https://www.winterwalrus.com/',
-    image: '/img/winter-walrus',
-    network: 'SUI',
-    tags: [
-      {
-        title: 'LST',
-        Icon: PlusSVG,
-      },
-      {
-        title: 'Stake',
-        Icon: RocketSVG,
-      },
-      {
-        title: 'Walrus',
-        Icon: DifferenceSVG,
       },
     ],
   },
