@@ -127,7 +127,7 @@ const ProductCard: FC<ProductCardProps> = ({
           <Typography
             size="large"
             variant="body"
-            maxWidth="20rem"
+            maxWidth="25rem"
             color="onSurface"
           >
             {description}
