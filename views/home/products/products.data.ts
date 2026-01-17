@@ -6,16 +6,22 @@ import {
   DAOSVG,
   DifferenceSVG,
   IPXMovementSVG,
+  LockSVG,
   PlusSVG,
+  PrivacySVG,
   PrivateDropSVG,
   PythSVG,
   ResistanceSVG,
   RocketSVG,
+  SecureFolderSVG,
+  ShieldSVG,
   SnowSVG,
   SuiCoinsSVG,
   SuiTearsSVG,
   SwapSVG,
   VirtualDropSVG,
+  VortexSVG,
+  WalletSVG,
   WaveSVG,
 } from '@/components/svg';
 
@@ -95,6 +101,38 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
       {
         title: 'Virtual Liquidity',
         Icon: VirtualDropSVG,
+      },
+    ],
+  },
+  {
+    id: 'vortex',
+    Icon: VortexSVG,
+    name: 'Vortex',
+    description:
+      'Private DeFi protocol on the Sui blockchain, focused on confidential transactions and privacy-preserving asset management using zero-knowledge proofs.',
+    link: 'https://www.vortexfi.xyz/',
+    image: '/img/vortex',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Private Wallets',
+        Icon: WalletSVG,
+      },
+      {
+        title: 'On-chain Privacy',
+        Icon: ShieldSVG,
+      },
+      {
+        title: 'Confidential Transactions',
+        Icon: LockSVG,
+      },
+      {
+        title: 'Privacy-Preserving',
+        Icon: PrivacySVG,
+      },
+      {
+        title: 'Secure Asset Management',
+        Icon: SecureFolderSVG,
       },
     ],
   },
