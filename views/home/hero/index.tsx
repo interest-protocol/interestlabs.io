@@ -74,22 +74,29 @@ const Hero: FC = () => {
             Shaping the Future of Decentralized Finance
           </Typography>
           <Box display="flex" gap="s" mt="4xl">
-            {PRODUCTS.map(({ Icon, id }) => (
-              <Link href={`/#${id}`} key={unikey()}>
-                {typeof Icon == 'string' ? (
-                  <Box bg="#fff" width="3rem" height="3rem" borderRadius="100%">
-                    <img
-                      src={`${Icon}.webp`}
-                      alt={id}
-                      width="48px"
-                      height="48px"
-                    />
-                  </Box>
-                ) : (
-                  <Icon width="100%" maxWidth="3rem" maxHeight="3rem" />
-                )}
-              </Link>
-            ))}
+            {PRODUCTS.filter((product) => !product.isLegacy).map(
+              ({ Icon, id }) => (
+                <Link href={`/#${id}`} key={unikey()}>
+                  {typeof Icon == 'string' ? (
+                    <Box
+                      bg="#fff"
+                      width="3rem"
+                      height="3rem"
+                      borderRadius="100%"
+                    >
+                      <img
+                        src={`${Icon}.webp`}
+                        alt={id}
+                        width="48px"
+                        height="48px"
+                      />
+                    </Box>
+                  ) : (
+                    <Icon width="100%" maxWidth="3rem" maxHeight="3rem" />
+                  )}
+                </Link>
+              )
+            )}
           </Box>
         </Box>
       </Box>

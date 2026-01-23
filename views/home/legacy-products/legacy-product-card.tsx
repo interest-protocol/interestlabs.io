@@ -86,6 +86,7 @@ const LegacyProductCard: FC<LegacyProductCardProps> = ({
         zIndex="2"
         display="flex"
         flexDirection="column"
+        justifyContent="space-between"
         height="100%"
       >
         <Box
@@ -105,49 +106,44 @@ const LegacyProductCard: FC<LegacyProductCardProps> = ({
             <Icon maxWidth="3.5rem" maxHeight="3.5rem" width="100%" />
           )}
         </Box>
-        <Typography
-          variant="body"
-          size="medium"
-          fontSize={'1.4rem'}
-          fontWeight="500"
-          color="#ffffff"
-          mb={'14px'}
-          letterSpacing="-0.02em"
-          flexShrink="0"
-        >
-          {name}
-        </Typography>
-
-        <Box
-          mb="24px"
-          overflow="hidden"
-          flexShrink="0"
-          style={{
-            display: '-webkit-box',
-            WebkitLineClamp: 3,
-            WebkitBoxOrient: 'vertical',
-            textOverflow: 'ellipsis',
-          }}
-        >
+        <Box>
           <Typography
+            variant="display"
             size="medium"
-            variant="body"
-            fontSize={'0.95rem'}
-            fontWeight="300"
-            lineHeight={'1.7'}
-            color="#666666"
+            fontSize={'1.4rem'}
+            fontWeight="500"
+            color="#ffffff"
+            flexShrink="0"
+            letterSpacing="-0.02em"
           >
-            {description}
+            {name}
           </Typography>
+
+          <Box
+            mb="24px"
+            overflow="hidden"
+            flexShrink="0"
+            style={{
+              display: '-webkit-box',
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: 'vertical',
+              textOverflow: 'ellipsis',
+            }}
+          >
+            <Typography
+              size="medium"
+              variant="body"
+              fontSize={'0.95rem'}
+              fontWeight="300"
+              lineHeight={'1.7'}
+              color="#666666"
+            >
+              {description}
+            </Typography>
+          </Box>
         </Box>
 
-        <Box
-          display="flex"
-          flexWrap="wrap"
-          gap="8px"
-          marginBottom="20px"
-          flexShrink="0"
-        >
+        <Box gap="8px" display="flex" flexWrap="wrap" flexShrink="0">
           {tags.map((tag) => (
             <Motion
               key={tag.title}
@@ -190,7 +186,7 @@ const LegacyProductCard: FC<LegacyProductCardProps> = ({
               </Typography>
             </Motion>
           ))}
-          {link != '#' && (
+          {link != '' && link != '#' && (
             <Motion
               as="span"
               borderRadius="6px"

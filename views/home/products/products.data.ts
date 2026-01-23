@@ -93,6 +93,31 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     ],
   },
   {
+    id: 'walrus',
+    Icon: SnowSVG,
+    name: 'Winter Walrus',
+    description:
+      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
+    link: 'https://www.winterwalrus.com/',
+    image: '/img/winter-walrus',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'LST',
+        Icon: PlusSVG,
+      },
+      {
+        title: 'Stake',
+        Icon: RocketSVG,
+      },
+      {
+        title: 'Walrus',
+        Icon: DifferenceSVG,
+      },
+    ],
+    year: '2025',
+  },
+  {
     id: 'movement',
     Icon: IPXMovementSVG,
     name: 'Interest DEX',
@@ -139,32 +164,6 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
         Icon: PlusSVG,
       },
     ],
-  },
-  {
-    id: 'walrus',
-    Icon: SnowSVG,
-    name: 'Winter Walrus',
-    description:
-      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
-    link: 'https://www.winterwalrus.com/',
-    image: '/img/winter-walrus',
-    network: 'SUI',
-    tags: [
-      {
-        title: 'LST',
-        Icon: PlusSVG,
-      },
-      {
-        title: 'Stake',
-        Icon: RocketSVG,
-      },
-      {
-        title: 'Walrus',
-        Icon: DifferenceSVG,
-      },
-    ],
-    year: '2025',
-    isLegacy: true,
   },
   {
     id: 'tide',
@@ -297,6 +296,31 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
       },
       {
         title: 'Open-source',
+        Icon: CogSVG,
+      },
+    ],
+    year: '2024',
+    isLegacy: true,
+  },
+  {
+    id: 'incinerator',
+    Icon: SuiCoinsSVG,
+    name: 'incinerator',
+    description: 'Burn your assets and keep your wallet clean',
+    link: '',
+    image: '',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Burn',
+        Icon: DAOSVG,
+      },
+      {
+        title: 'Clean',
+        Icon: BookSVG,
+      },
+      {
+        title: 'user-friendly',
         Icon: CogSVG,
       },
     ],
