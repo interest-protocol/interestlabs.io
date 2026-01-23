@@ -1,12 +1,15 @@
 import {
   AirdropSVG,
+  BlastSVG,
   BookSVG,
   CogSVG,
   CoinSVG,
   DAOSVG,
   DifferenceSVG,
+  GiftSVG,
   IPXMovementSVG,
   LockSVG,
+  PieChartSVG,
   PlusSVG,
   PrivacySVG,
   PrivateDropSVG,
@@ -16,6 +19,7 @@ import {
   SecureFolderSVG,
   ShieldSVG,
   SnowSVG,
+  SparklesSVG,
   SuiCoinsSVG,
   SuiTearsSVG,
   SwapSVG,
@@ -29,6 +33,66 @@ import { ProductCardProps } from './product-card/product-card.types';
 
 export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
   {
+    id: 'blast',
+    Icon: BlastSVG,
+    name: 'Blast.fun',
+    description:
+      'Blast.fun is a Web3 memecoin launchpad and discovery platform where users create and explore tokens directly on-chain.',
+    link: 'https://www.blast.fun/',
+    image: '/img/blast-fun',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Launchpad',
+        Icon: RocketSVG,
+      },
+      {
+        title: 'Rewards',
+        Icon: GiftSVG,
+      },
+      {
+        title: 'Portfolio',
+        Icon: PieChartSVG,
+      },
+      {
+        title: 'Token Creation',
+        Icon: SparklesSVG,
+      },
+    ],
+  },
+  {
+    id: 'vortex',
+    Icon: VortexSVG,
+    name: 'Vortex',
+    description:
+      'Private DeFi protocol on the Sui blockchain, focused on confidential transactions and privacy-preserving asset management using zero-knowledge proofs.',
+    link: 'https://www.vortexfi.xyz/',
+    image: '/img/vortex',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Private Wallets',
+        Icon: WalletSVG,
+      },
+      {
+        title: 'On-chain Privacy',
+        Icon: ShieldSVG,
+      },
+      {
+        title: 'Confidential Transactions',
+        Icon: LockSVG,
+      },
+      {
+        title: 'Privacy-Preserving',
+        Icon: PrivacySVG,
+      },
+      {
+        title: 'Secure Asset Management',
+        Icon: SecureFolderSVG,
+      },
+    ],
+  },
+  {
     id: 'movement',
     Icon: IPXMovementSVG,
     name: 'Interest DEX',
@@ -37,6 +101,30 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     link: 'https://interest.xyz',
     image: '/img/movement',
     network: 'M2',
+    tags: [
+      {
+        title: 'DEX',
+        Icon: SwapSVG,
+      },
+      {
+        title: 'Airdrop',
+        Icon: AirdropSVG,
+      },
+      {
+        title: 'Create Coins',
+        Icon: PlusSVG,
+      },
+    ],
+  },
+  {
+    id: 'suicoins',
+    Icon: SuiCoinsSVG,
+    name: 'Suicoins',
+    description:
+      'Effortless coin minting and distribution; swapping and liquidity management.',
+    link: 'https://suicoins.com',
+    image: '/img/sui-coins',
+    network: 'SUI',
     tags: [
       {
         title: 'DEX',
@@ -75,6 +163,8 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
         Icon: DifferenceSVG,
       },
     ],
+    year: '2025',
+    isLegacy: true,
   },
   {
     id: 'tide',
@@ -103,38 +193,8 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
         Icon: VirtualDropSVG,
       },
     ],
-  },
-  {
-    id: 'vortex',
-    Icon: VortexSVG,
-    name: 'Vortex',
-    description:
-      'Private DeFi protocol on the Sui blockchain, focused on confidential transactions and privacy-preserving asset management using zero-knowledge proofs.',
-    link: 'https://www.vortexfi.xyz/',
-    image: '/img/vortex',
-    network: 'SUI',
-    tags: [
-      {
-        title: 'Private Wallets',
-        Icon: WalletSVG,
-      },
-      {
-        title: 'On-chain Privacy',
-        Icon: ShieldSVG,
-      },
-      {
-        title: 'Confidential Transactions',
-        Icon: LockSVG,
-      },
-      {
-        title: 'Privacy-Preserving',
-        Icon: PrivacySVG,
-      },
-      {
-        title: 'Secure Asset Management',
-        Icon: SecureFolderSVG,
-      },
-    ],
+    year: '2025',
+    isLegacy: true,
   },
   {
     id: 'memez',
@@ -159,6 +219,8 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
         Icon: DifferenceSVG,
       },
     ],
+    year: '2025',
+    isLegacy: true,
   },
   {
     id: 'suitears',
@@ -186,29 +248,59 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
         Icon: CoinSVG,
       },
     ],
+    year: '2024',
+    isLegacy: true,
   },
   {
-    id: 'suicoins',
-    Icon: SuiCoinsSVG,
-    name: 'Suicoins',
+    id: 'suprotocol',
+    Icon: SuiTearsSVG,
+    name: 'Su Protocol',
     description:
-      'Effortless coin minting and distribution; swapping and liquidity management.',
-    link: 'https://suicoins.com',
-    image: '/img/sui-coins',
+      'Mint synthetic tokens on Su Protocol in a simple and secure way, with real-time tracking of collateral, fees, and slippage directly in the interface.',
+    link: '#',
+    image: '',
     network: 'SUI',
     tags: [
       {
-        title: 'DEX',
-        Icon: SwapSVG,
+        title: 'Swap',
+        Icon: DAOSVG,
       },
       {
-        title: 'Airdrop',
-        Icon: AirdropSVG,
+        title: 'Mint',
+        Icon: BookSVG,
       },
       {
-        title: 'Create Coins',
-        Icon: PlusSVG,
+        title: 'Collateral',
+        Icon: CogSVG,
       },
     ],
+    year: '2024',
+    isLegacy: true,
+  },
+  {
+    id: 'suiterminal',
+    Icon: SuiCoinsSVG,
+    name: 'SuiCoins Terminal',
+    description:
+      'SuiCoins Terminal is an open-source, lightweight version of SuiCoins Swap feature, designed to provide a seamless end-to-end swap flow solution. It can be easily integrated into your Website, enabling smooth swaps across platforms.',
+    link: '#',
+    image: '',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Integrated',
+        Icon: DAOSVG,
+      },
+      {
+        title: 'Simple',
+        Icon: BookSVG,
+      },
+      {
+        title: 'Open-source',
+        Icon: CogSVG,
+      },
+    ],
+    year: '2024',
+    isLegacy: true,
   },
 ];
