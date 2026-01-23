@@ -104,4 +104,16 @@ export const GlobalStyles = css`
     border-radius: 0.5rem;
     border: 5px solid transparent;
   }
+
+  /* Legacy Projects Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 `;

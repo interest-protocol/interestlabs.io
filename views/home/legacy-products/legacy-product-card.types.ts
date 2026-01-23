@@ -2,21 +2,17 @@ import { FC } from 'react';
 
 import { SVGProps } from '@/components/svg/svg.types';
 
-interface Tag {
+export interface Tag {
   title: string;
   Icon: FC<SVGProps>;
 }
 
-export interface ProductCardProps {
-  id: string;
-  link: string;
-  name: string;
-  image: string;
-  index: number;
+export interface LegacyProductCardProps {
   Icon: FC<SVGProps> | string;
+  name: string;
   description: string;
-  network: 'SUI' | 'M2';
   tags: ReadonlyArray<Tag>;
   year?: string;
-  isLegacy?: boolean;
+  link: string;
+  index: number;
 }

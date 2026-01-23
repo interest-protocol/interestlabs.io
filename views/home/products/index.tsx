@@ -31,9 +31,11 @@ const Products: FC = () => (
         Our Products
       </Typography>
       <Box display="flex" flexDirection="column" gap="4xl">
-        {PRODUCTS.map((product, index) => (
-          <ProductCard key={unikey()} {...product} index={index} />
-        ))}
+        {PRODUCTS.filter((product) => !product.isLegacy).map(
+          (product, index) => (
+            <ProductCard key={unikey()} {...product} index={index} />
+          )
+        )}
       </Box>
     </Box>
   </Box>
