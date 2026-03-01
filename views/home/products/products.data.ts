@@ -123,7 +123,7 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     name: 'Interest DEX',
     description:
       'Explore all the tooling available on SuiCoins, but in a different blockchain.',
-    link: 'https://interest.xyz',
+    link: 'https://github.com/interest-protocol/interestprotocol.com',
     image: '/img/movement',
     network: 'M2',
     tags: [
@@ -140,6 +140,8 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
         Icon: PlusSVG,
       },
     ],
+    year: '2024',
+    isLegacy: true,
   },
   {
     id: 'suicoins',
