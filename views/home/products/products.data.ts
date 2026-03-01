@@ -203,6 +203,165 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     name: 'Memez.GG',
     description:
       'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
+    link: 'https://www.winterwalrus.com/',
+    image: '/img/winter-walrus',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'LST',
+        Icon: PlusSVG,
+      },
+      {
+        title: 'Stake',
+        Icon: RocketSVG,
+      },
+      {
+        title: 'Walrus',
+        Icon: DifferenceSVG,
+      },
+    ],
+    year: '2025',
+    isLegacy: true,
+  },
+  {
+    id: 'movement',
+    Icon: IPXMovementSVG,
+    name: 'Interest DEX',
+    description:
+      'Explore all the tooling available on SuiCoins, but in a different blockchain.',
+    link: 'https://interest.xyz',
+    image: '/img/movement',
+    network: 'M2',
+    tags: [
+      {
+        title: 'DEX',
+        Icon: SwapSVG,
+      },
+      {
+        title: 'Airdrop',
+        Icon: AirdropSVG,
+      },
+      {
+        title: 'Create Coins',
+        Icon: PlusSVG,
+      },
+    ],
+    year: '2024',
+    isLegacy: true,
+  },
+  {
+    id: 'suprotocol',
+    Icon: SuiTearsSVG,
+    name: 'Su Protocol',
+    description:
+      'Mint synthetic tokens on Su Protocol in a simple and secure way, with real-time tracking of collateral, fees, and slippage directly in the interface.',
+    link: '#',
+    image: '',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Swap',
+        Icon: DAOSVG,
+      },
+      {
+        title: 'Mint',
+        Icon: BookSVG,
+      },
+      {
+        title: 'Collateral',
+        Icon: CogSVG,
+      },
+    ],
+    year: '2024',
+    isLegacy: true,
+  },
+  {
+    id: 'suiterminal',
+    Icon: SuiCoinsSVG,
+    name: 'SuiCoins Terminal',
+    description:
+      'SuiCoins Terminal is an open-source, lightweight version of SuiCoins Swap feature, designed to provide a seamless end-to-end swap flow solution. It can be easily integrated into your Website, enabling smooth swaps across platforms.',
+    link: '#',
+    image: '',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Integrated',
+        Icon: DAOSVG,
+      },
+      {
+        title: 'Simple',
+        Icon: BookSVG,
+      },
+      {
+        title: 'Open-source',
+        Icon: CogSVG,
+      },
+    ],
+    year: '2024',
+    isLegacy: true,
+  },
+  {
+    id: 'incinerator',
+    Icon: SuiCoinsSVG,
+    name: 'incinerator',
+    description: 'Burn your assets and keep your wallet clean',
+    link: '',
+    image: '',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Burn',
+        Icon: DAOSVG,
+      },
+      {
+        title: 'Clean',
+        Icon: BookSVG,
+      },
+      {
+        title: 'user-friendly',
+        Icon: CogSVG,
+      },
+    ],
+    year: '2024',
+    isLegacy: true,
+  },
+  {
+    id: 'tide',
+    Icon: WaveSVG,
+    name: 'Tide Private AMM',
+    description:
+      'Private liquidity AMM designed to provide the best swap rates for users.',
+    link: 'https://suiscan.xyz/mainnet/directory/Tide',
+    image: '/img/tide',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'MEV Resistance  ',
+        Icon: ResistanceSVG,
+      },
+      {
+        title: 'Pyth Oracle',
+        Icon: PythSVG,
+      },
+      {
+        title: 'Private Liquidity',
+        Icon: PrivateDropSVG,
+      },
+      {
+        title: 'Virtual Liquidity',
+        Icon: VirtualDropSVG,
+      },
+    ],
+    year: '2025',
+    isLegacy: true,
+  },
+  {
+    id: 'memez',
+    Icon: '/img/memez-head',
+    name: 'Memez.GG',
+    description:
+      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
     link: 'https://coins.memez.gg/',
     image: '/img/coins-memez',
     network: 'SUI',
