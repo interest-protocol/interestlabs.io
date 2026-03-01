@@ -108,6 +108,29 @@ const Footer: FC = () => (
               </TooltipWrapper>
             </a>
           </Box>
+          <Box width={['100%', '28rem', '28rem', '30rem']}>
+            <Typography
+              variant="body"
+              size="medium"
+              textAlign="justify"
+              lineHeight="1.75rem"
+            >
+              A empresa DEFI LDA foi beneficiária de apoio no âmbito do Plano de
+              Recuperação e Resiliência (PRR), através do projeto ”Projeto Nº
+              2574”, enquadrado no Aviso Nº 10/C16-i02/2022, que visa
+              impulsionar a transição digital das empresas em Portugal.
+              <br />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: '#B4C5FF' }}
+                href="https://recuperarportugal.gov.pt"
+              >
+                Clique aqui para saber mais sobre o Plano de Recuperação e
+                Resiliência (PRR)
+              </a>
+            </Typography>
+          </Box>
         </Box>
 
         <Box
@@ -150,6 +173,20 @@ const Footer: FC = () => (
               }
             >
               Media Kit
+            </Button>
+          </a>
+          <a href={Routes[RoutesEnum.Prr]} target="_blank" rel="noreferrer">
+            <Button
+              variant="tonal"
+              SuffixIcon={
+                <AnchorArrowSVG
+                  maxWidth="0.85rem"
+                  maxHeight="0.85rem"
+                  width="100%"
+                />
+              }
+            >
+              PRR
             </Button>
           </a>
         </Box>
