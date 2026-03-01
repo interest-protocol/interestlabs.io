@@ -172,6 +172,41 @@ const RRP: FC = () => (
           </a>
         </Typography>
       </Box>
+      <Box>
+        <Typography
+          mb="1rem"
+          size="large"
+          variant="title"
+          fontWeight="700"
+          color="onSurface"
+          lineHeight={['auto', 'auto', 'auto', '4rem']}
+          fontSize={['1.7rem', '1.7rem', '2.5rem']}
+        >
+          PRR
+        </Typography>
+        <Typography
+          as="p"
+          size="small"
+          variant="body"
+          verticalAlign="middle"
+          fontSize={['1rem', '1rem', '1rem', '1.375rem']}
+          textAlign={['justify', 'justify', 'justify', 'left']}
+          lineHeight={['1.5rem', '1.5rem', '1.5rem', '1.75rem']}
+        >
+          Quer saber como o PRR pode transformar ideias em projetos e
+          impulsionar o desenvolvimento sustentável e tecnológico do país?
+          <a
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: '#B4C5FF' }}
+            href="https://recuperarportugal.gov.pt"
+          >
+            {' Clique aqui '}
+          </a>
+          e descubra as oportunidades que o Plano de Recuperação e Resiliência
+          tem para oferecer!
+        </Typography>
+      </Box>
     </Box>
     <Footer />
   </>
